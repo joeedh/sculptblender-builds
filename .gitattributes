@@ -4,3 +4,4 @@
 builds/sculptblender_2023_8_22_win64.zip filter=lfs diff=lfs merge=lfs -text
 builds/sculptblender_2023_9_7_win64.zip filter=lfs diff=lfs merge=lfs -text
 builds/sculptblender_latest_win64.zip filter=lfs diff=lfs merge=lfs -text
+builds/sculptblender_2023_9_24_win64.zip filter=lfs diff=lfs merge=lfs -text
