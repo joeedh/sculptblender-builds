@@ -4,6 +4,16 @@ Every SculptBlender package build, newest first. Binaries are GitHub
 Release assets, not files in this repo — the links below download them
 directly. Installation instructions live in [the README](./Readme.MD#installation).
 
+## [build-20260729-4d5f53e](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-4d5f53e) — pre-release
+
+Built 2026-07-29 from [sculptcore-blender-addon@`4d5f53e`](https://github.com/joeedh/sculptcore-blender-addon/commit/4d5f53ea82e7f1aa5ea40bcea679d1a6abfab94c), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
+
+| platform | download | sha256 |
+| --- | --- | --- |
+| Linux x64 | [sculptblender-build-20260729-4d5f53e-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-4d5f53e/sculptblender-build-20260729-4d5f53e-linux-x64.tar.gz) | `76458082b70ca1981bede801bdeded420765c318e9d9bf84fbeb460778b0c1bf` |
+| macOS arm64 | [sculptblender-build-20260729-4d5f53e-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-4d5f53e/sculptblender-build-20260729-4d5f53e-macos-arm64.tar.gz) | `f293f0b5415c93977f8a08a69a36369e952a79e384be69b543765bb54e1bda5a` |
+| Windows x64 | [sculptblender-build-20260729-4d5f53e-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-4d5f53e/sculptblender-build-20260729-4d5f53e-windows-x64.zip) | `63b233a28fedc2d0232c12b66aa3d4794905b37e8656a2546faf76381c747d95` |
+
 ## [build-20260729-fb07979](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-fb07979) — pre-release
 
 Built 2026-07-29 from [sculptcore-blender-addon@`fb07979`](https://github.com/joeedh/sculptcore-blender-addon/commit/fb0797964be5a109c27c5803bff8e92bc887eeda), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
