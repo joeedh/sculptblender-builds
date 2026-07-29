@@ -14,6 +14,9 @@ turn on after the first launch.
 > [`releases/`](./releases).
 >
 > - **[Latest build →](https://github.com/joeedh/sculptblender-builds/releases/latest)**
+>   ([Linux](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-linux-x64.tar.gz)
+>   · [macOS](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-macos-arm64.tar.gz)
+>   · [Windows](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-windows-x64.zip))
 > - **[All builds, with checksums →](./RELEASES.md)**
 
 These are development builds of an in-progress project. They are unsigned and
@@ -25,25 +28,31 @@ without a backup.
 
 ## Installation
 
-Pick the package for your platform from the
-[latest release](https://github.com/joeedh/sculptblender-builds/releases/latest):
+Pick the package for your platform. The download links always fetch the newest
+build, so they are safe to bookmark or script:
 
-| platform | file |
-| --- | --- |
-| Linux x64 | `sculptblender-<tag>-linux-x64.tar.gz` |
-| macOS (Apple silicon) | `sculptblender-<tag>-macos-arm64.tar.gz` |
-| Windows x64 | `sculptblender-<tag>-windows-x64.zip` |
+| platform | file | download |
+| --- | --- | --- |
+| Linux x64 | `sculptblender-linux-x64.tar.gz` | [latest](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-linux-x64.tar.gz) |
+| macOS (Apple silicon) | `sculptblender-macos-arm64.tar.gz` | [latest](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-macos-arm64.tar.gz) |
+| Windows x64 | `sculptblender-windows-x64.zip` | [latest](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-windows-x64.zip) |
+
+To pick a specific build instead, take it from that release's page or from
+[RELEASES.md](./RELEASES.md). Older releases carry the build tag in the file
+name as well (`sculptblender-<tag>-linux-x64.tar.gz`); newer ones do not, which
+is what makes the always-latest links above possible.
 
 Every package has a matching `.sha256` asset; verifying it is optional but
 takes a second (commands below).
 
-Each archive contains one top-level folder named after the package, so you can
-extract it straight into your Downloads folder without making a directory for it
-first.
+Each archive contains a single top-level folder named after the *build* —
+`sculptblender-<tag>-<platform>/` — so you can extract it straight into your
+Downloads folder without making a directory for it first, and two different
+builds never overwrite each other.
 
 ### Windows x64
 
-1. Download the `-windows-x64.zip`.
+1. Download `sculptblender-windows-x64.zip`.
 2. Right-click → **Properties** → tick **Unblock** → **OK**. (Windows marks
    downloaded archives, and the mark propagates to everything you extract.)
 3. Extract it anywhere you like — your Desktop or `C:\` both work. It creates a
@@ -57,15 +66,15 @@ build is unsigned. Choose **More info → Run anyway** if you trust the source.
 Verify the download (PowerShell, from the folder holding both files):
 
 ```powershell
-Get-FileHash .\sculptblender-<tag>-windows-x64.zip -Algorithm SHA256
+Get-FileHash .\sculptblender-windows-x64.zip -Algorithm SHA256
 # compare the hash against the contents of the matching .sha256 file
 ```
 
 ### Linux x64
 
 ```sh
-tar -xzf sculptblender-<tag>-linux-x64.tar.gz
-cd sculptblender-<tag>-linux-x64
+tar -xzf sculptblender-linux-x64.tar.gz
+cd sculptblender-*-linux-x64        # the folder, unlike the archive, carries the build tag
 ./blender
 ```
 
@@ -83,14 +92,14 @@ sudo apt install libx11-6 libxi6 libxxf86vm1 libxcursor1 libxrandr2 \
 Verify the download:
 
 ```sh
-sha256sum -c sculptblender-<tag>-linux-x64.tar.gz.sha256
+sha256sum -c sculptblender-linux-x64.tar.gz.sha256
 ```
 
 ### macOS (Apple silicon)
 
 ```sh
-tar -xzf sculptblender-<tag>-macos-arm64.tar.gz
-cd sculptblender-<tag>-macos-arm64
+tar -xzf sculptblender-macos-arm64.tar.gz
+cd sculptblender-*-macos-arm64      # the folder, unlike the archive, carries the build tag
 xattr -dr com.apple.quarantine Blender.app     # required: the build is unsigned
 open Blender.app
 ```
@@ -105,7 +114,7 @@ These packages are **arm64 only** (M1 and later). There is no Intel build.
 Verify the download:
 
 ```sh
-shasum -a 256 -c sculptblender-<tag>-macos-arm64.tar.gz.sha256
+shasum -a 256 -c sculptblender-macos-arm64.tar.gz.sha256
 ```
 
 ---
