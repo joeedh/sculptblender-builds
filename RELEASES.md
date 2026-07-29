@@ -4,6 +4,26 @@ Every SculptBlender package build, newest first. Binaries are GitHub
 Release assets, not files in this repo — the links below download them
 directly. Installation instructions live in [the README](./Readme.MD#installation).
 
+## Latest build
+
+These links always download the newest non-pre-release build — currently [`build-20260729-b92ec0e`](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-b92ec0e). They are stable: bookmark or script them.
+
+| platform | download |
+| --- | --- |
+| Linux x64 | [sculptblender-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-linux-x64.tar.gz) |
+| macOS arm64 | [sculptblender-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-macos-arm64.tar.gz) |
+| Windows x64 | [sculptblender-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-windows-x64.zip) |
+
+## [build-20260729-b92ec0e](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-b92ec0e)
+
+Built 2026-07-29 from [sculptcore-blender-addon@`b92ec0e`](https://github.com/joeedh/sculptcore-blender-addon/commit/b92ec0e82511affce0be9ccab765d1f7c9450901), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
+
+| platform | download | sha256 |
+| --- | --- | --- |
+| Linux x64 | [sculptblender-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-b92ec0e/sculptblender-linux-x64.tar.gz) | `31e6d211532fed3d99340f208d246473d1d00bdef1cf6543fdd79b384fda78ff` |
+| macOS arm64 | [sculptblender-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-b92ec0e/sculptblender-macos-arm64.tar.gz) | `fa241ccba9a985b45dda5d6339097a27cb2de51f2362419ef2e9613c541e2819` |
+| Windows x64 | [sculptblender-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-b92ec0e/sculptblender-windows-x64.zip) | `fae1b0efaddfa5a102ce1624d7e1c4113e9883d60d1ace9a56f993fdda63ab4c` |
+
 ## [build-20260729-4d5f53e](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-4d5f53e) — pre-release
 
 Built 2026-07-29 from [sculptcore-blender-addon@`4d5f53e`](https://github.com/joeedh/sculptcore-blender-addon/commit/4d5f53ea82e7f1aa5ea40bcea679d1a6abfab94c), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
