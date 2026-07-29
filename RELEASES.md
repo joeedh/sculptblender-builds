@@ -4,6 +4,16 @@ Every SculptBlender package build, newest first. Binaries are GitHub
 Release assets, not files in this repo — the links below download them
 directly. Installation instructions live in [the README](./Readme.MD#installation).
 
+## [build-20260729-28a6687](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-28a6687) — pre-release
+
+Built 2026-07-29 from [sculptcore-blender-addon@`28a6687`](https://github.com/joeedh/sculptcore-blender-addon/commit/28a66876a2fe24f85de73e8bcaaf204d3b470649), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
+
+| platform | download | sha256 |
+| --- | --- | --- |
+| Linux x64 | [sculptblender-build-20260729-28a6687-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-28a6687/sculptblender-build-20260729-28a6687-linux-x64.tar.gz) | `2b4f05cd6ede0e58c6ac46e4152ad34b25149041025140c4de341f6ecade55fd` |
+| macOS arm64 | [sculptblender-build-20260729-28a6687-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-28a6687/sculptblender-build-20260729-28a6687-macos-arm64.tar.gz) | `47687a0498c61982e3f62a6247124410f2f0073f2f3f52e07311827718ab7304` |
+| Windows x64 | [sculptblender-build-20260729-28a6687-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-28a6687/sculptblender-build-20260729-28a6687-windows-x64.zip) | `899eb5da249d28dc9bf8cf7906430508cc1c7c6af58beafc30129f118f4ba640` |
+
 ## [build-20260729-d151fe9](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-d151fe9) — pre-release
 
 Built 2026-07-29 from [sculptcore-blender-addon@`d151fe9`](https://github.com/joeedh/sculptcore-blender-addon/commit/d151fe988c788505496992473fe2de7fa2bd5409), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
@@ -23,14 +33,4 @@ Built 2026-07-29 from [sculptcore-blender-addon@`6e85bd1`](https://github.com/jo
 | Linux x64 | [sculptblender-build-20260729-6e85bd1-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-6e85bd1/sculptblender-build-20260729-6e85bd1-linux-x64.tar.gz) | `a9d83463eb9cac48e3f38836c0e80485964b82bc3cdc7ae00119cc6372967800` |
 | macOS arm64 | [sculptblender-build-20260729-6e85bd1-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-6e85bd1/sculptblender-build-20260729-6e85bd1-macos-arm64.tar.gz) | `dd5969b5a108b8303a0e0efb84b273900e502255823e9e41ef602d7deb966c41` |
 | Windows x64 | [sculptblender-build-20260729-6e85bd1-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-6e85bd1/sculptblender-build-20260729-6e85bd1-windows-x64.zip) | `602c87375261cd063a3c299dc027ea8a74a67ce4a32e5b30a1f09e5159b1096f` |
-
-## [build-20260729-28a6687](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260729-28a6687) — pre-release
-
-Built 2026-07-29 from [sculptcore-blender-addon@`28a6687`](https://github.com/joeedh/sculptcore-blender-addon/commit/28a66876a2fe24f85de73e8bcaaf204d3b470649), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
-
-| platform | download | sha256 |
-| --- | --- | --- |
-| Linux x64 | [sculptblender-build-20260729-28a6687-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-28a6687/sculptblender-build-20260729-28a6687-linux-x64.tar.gz) | `2b4f05cd6ede0e58c6ac46e4152ad34b25149041025140c4de341f6ecade55fd` |
-| macOS arm64 | [sculptblender-build-20260729-28a6687-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-28a6687/sculptblender-build-20260729-28a6687-macos-arm64.tar.gz) | `47687a0498c61982e3f62a6247124410f2f0073f2f3f52e07311827718ab7304` |
-| Windows x64 | [sculptblender-build-20260729-28a6687-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260729-28a6687/sculptblender-build-20260729-28a6687-windows-x64.zip) | `899eb5da249d28dc9bf8cf7906430508cc1c7c6af58beafc30129f118f4ba640` |
 
