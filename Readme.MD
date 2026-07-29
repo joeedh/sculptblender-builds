@@ -2,9 +2,10 @@
 
 Downloadable builds of **Blender with the SculptCore sculpt mode**.
 
-Each package is a portable Blender — nothing is installed system-wide, nothing
-is written outside the folder you extract. The sculpt mode ships bundled and
-**enabled by default**, so there is no add-on to turn on after the first launch.
+Each package is a self-contained Blender — nothing is installed system-wide, and
+every archive unpacks into a single folder you can delete to remove it. The
+sculpt mode ships bundled and **enabled by default**, so there is no add-on to
+turn on after the first launch.
 
 > **Where are the files?**
 > Binaries are published as **[GitHub Release](https://github.com/joeedh/sculptblender-builds/releases)
@@ -36,14 +37,19 @@ Pick the package for your platform from the
 Every package has a matching `.sha256` asset; verifying it is optional but
 takes a second (commands below).
 
+Each archive contains one top-level folder named after the package, so you can
+extract it straight into your Downloads folder without making a directory for it
+first.
+
 ### Windows x64
 
 1. Download the `-windows-x64.zip`.
 2. Right-click → **Properties** → tick **Unblock** → **OK**. (Windows marks
    downloaded archives, and the mark propagates to everything you extract.)
-3. Extract it anywhere you like — your Desktop or `C:\` both work. Avoid
-   `C:\Program Files`; the folder needs to stay writable.
-4. Run **`blender.exe`** from the extracted folder.
+3. Extract it anywhere you like — your Desktop or `C:\` both work. It creates a
+   `sculptblender-<tag>-windows-x64` folder. Avoid `C:\Program Files`; the
+   folder needs to stay writable.
+4. Run **`blender.exe`** from inside that folder.
 
 SmartScreen may show *"Windows protected your PC"* the first time, because the
 build is unsigned. Choose **More info → Run anyway** if you trust the source.
@@ -58,9 +64,8 @@ Get-FileHash .\sculptblender-<tag>-windows-x64.zip -Algorithm SHA256
 ### Linux x64
 
 ```sh
-mkdir -p ~/sculptblender
-tar -xzf sculptblender-<tag>-linux-x64.tar.gz -C ~/sculptblender
-cd ~/sculptblender
+tar -xzf sculptblender-<tag>-linux-x64.tar.gz
+cd sculptblender-<tag>-linux-x64
 ./blender
 ```
 
@@ -84,9 +89,8 @@ sha256sum -c sculptblender-<tag>-linux-x64.tar.gz.sha256
 ### macOS (Apple silicon)
 
 ```sh
-mkdir -p ~/sculptblender
-tar -xzf sculptblender-<tag>-macos-arm64.tar.gz -C ~/sculptblender
-cd ~/sculptblender
+tar -xzf sculptblender-<tag>-macos-arm64.tar.gz
+cd sculptblender-<tag>-macos-arm64
 xattr -dr com.apple.quarantine Blender.app     # required: the build is unsigned
 open Blender.app
 ```
@@ -113,14 +117,17 @@ dropdown in the 3D viewport header — the same menu that holds Edit Mode and
 Blender's own Sculpt Mode.
 
 The mode is registered by the bundled `sculptcore_addon`, which the package
-enables for you. If it is missing from the dropdown, check
-**Edit → Preferences → Add-ons** for *SculptCore*, and open
+enables for you. It deliberately does not appear under
+**Edit → Preferences → Add-ons** — there is nothing to switch on, and nothing
+you can accidentally switch off. If the mode is missing from the dropdown, open
 **Window → Toggle System Console** (Windows) or launch Blender from a terminal
 to see why the native engine failed to load.
 
-Settings live in the package folder (`<version>/config/`), not in your normal
-Blender preferences, so installing a build does not disturb an existing Blender
-setup — and deleting the folder removes it completely.
+A package reads and writes the same Blender preferences as any other install on
+the machine, so your themes, keymaps and paths carry over. The bundled sculpt
+mode is not stored in those preferences — it is enabled by a marker file inside
+the package — so deleting the folder removes the build and leaves your existing
+Blender setup exactly as it was.
 
 ---
 
@@ -133,7 +140,8 @@ setup — and deleting the folder removes it completely.
   Python package, staged into `<version>/scripts/addons_core/`.
 - The native **SculptCore engine** shared library, built with the addon's own
   brush kernels compiled in, vendored beside the addon.
-- A `userpref.blend` with the add-on already enabled.
+- An `.always_enable` marker beside the add-on, which the fork reads at startup
+  to turn the sculpt mode on without writing to your Blender preferences.
 
 Packages are produced by the `Build packages` workflow in
 [sculptcore-blender-addon](https://github.com/joeedh/sculptcore-blender-addon);
