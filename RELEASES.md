@@ -20,9 +20,9 @@ Built 2026-08-06 from [sculptcore-blender-addon@`b91c71d`](https://github.com/jo
 
 | platform | download | sha256 |
 | --- | --- | --- |
-| Linux x64 | [sculptblender-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260806-b91c71d/sculptblender-linux-x64.tar.gz) | `9086e1969bf1c247c6c047eb44f9376b193edcf722685c892e9f7c6742c124c2` |
-| macOS arm64 | [sculptblender-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260806-b91c71d/sculptblender-macos-arm64.tar.gz) | `1d65e9a732c85cf83f0375ec710946d790375a417f5afd081384739084db85cd` |
-| Windows x64 | [sculptblender-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260806-b91c71d/sculptblender-windows-x64.zip) | `07adaeb08759eac2d87f3e69c7822e95f1365f327a2d840933799e2d10623c87` |
+| Linux x64 | [sculptblender-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260806-b91c71d/sculptblender-linux-x64.tar.gz) | `22ab9f7c9da77f162cc77616be378ca47a0e06a62816da37b949ef2b397637a9` |
+| macOS arm64 | [sculptblender-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260806-b91c71d/sculptblender-macos-arm64.tar.gz) | `a28c9ad5a72a66161a9ff821ac3f8eb401f8dc82baa92575f110e413624c3f85` |
+| Windows x64 | [sculptblender-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260806-b91c71d/sculptblender-windows-x64.zip) | `6420fb4fd49ac20bf7fc6147878ee743555800558e40b6a3b6448e301dcc6b57` |
 
 ## [build-20260802-e04cd57](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260802-e04cd57)
 
