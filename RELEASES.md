@@ -6,13 +6,23 @@ directly. Installation instructions live in [the README](./Readme.MD#installatio
 
 ## Latest build
 
-These links always download the newest non-pre-release build — currently [`build-20260806-b91c71d`](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260806-b91c71d). They are stable: bookmark or script them.
+These links always download the newest non-pre-release build — currently [`build-20260811-f673c61`](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260811-f673c61). They are stable: bookmark or script them.
 
 | platform | download |
 | --- | --- |
 | Linux x64 | [sculptblender-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-linux-x64.tar.gz) |
 | macOS arm64 | [sculptblender-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-macos-arm64.tar.gz) |
 | Windows x64 | [sculptblender-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/latest/download/sculptblender-windows-x64.zip) |
+
+## [build-20260811-f673c61](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260811-f673c61)
+
+Built 2026-08-11 from [sculptcore-blender-addon@`f673c61`](https://github.com/joeedh/sculptcore-blender-addon/commit/f673c611caee3ad6704b7d990dd02fb7cede91a3), Blender fork branch `custom-object-modes`, engine config `RelWithDebInfo`.
+
+| platform | download | sha256 |
+| --- | --- | --- |
+| Linux x64 | [sculptblender-linux-x64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260811-f673c61/sculptblender-linux-x64.tar.gz) | `0101f204ef282de465f045a5523590509eb4162263576aa575e915bd37324224` |
+| macOS arm64 | [sculptblender-macos-arm64.tar.gz](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260811-f673c61/sculptblender-macos-arm64.tar.gz) | `bf775aea9517df535ec332a74c546199a1d0cae58f9b1e4675e9afedef3ee46d` |
+| Windows x64 | [sculptblender-windows-x64.zip](https://github.com/joeedh/sculptblender-builds/releases/download/build-20260811-f673c61/sculptblender-windows-x64.zip) | `4519f9e6db547b37bfb3fdcfc02c5fbab1df5b257c0ee63b2e7e49bad77a017b` |
 
 ## [build-20260806-b91c71d](https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260806-b91c71d)
 
