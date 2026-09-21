@@ -1,0 +1,31 @@
+{
+  "tag": "build-20260921-8aa9482",
+  "date": "2026-09-21",
+  "created_at": "2026-09-21T06:48:24Z",
+  "prerelease": false,
+  "source_repo": "joeedh/sculptcore-blender-addon",
+  "source_sha": "8aa948277717ecde4b1535ba844dc3347c062a17",
+  "blender_branch": "custom-object-modes",
+  "config": "RelWithDebInfo",
+  "release": "https://github.com/joeedh/sculptblender-builds/releases/tag/build-20260921-8aa9482",
+  "assets": [
+    {
+      "name": "sculptblender-linux-x64.tar.gz",
+      "sha256": "1142e8b45b9ebf933a1e1c8bbcd56a5305dd3c52916ba7617936dcdf7383b7f1",
+      "platform": "linux-x64",
+      "url": "https://github.com/joeedh/sculptblender-builds/releases/download/build-20260921-8aa9482/sculptblender-linux-x64.tar.gz"
+    },
+    {
+      "name": "sculptblender-macos-arm64.tar.gz",
+      "sha256": "c67b65b8be09120561056cf50723248f5630f82b8f6d2fdc37b517b6fa138438",
+      "platform": "macos-arm64",
+      "url": "https://github.com/joeedh/sculptblender-builds/releases/download/build-20260921-8aa9482/sculptblender-macos-arm64.tar.gz"
+    },
+    {
+      "name": "sculptblender-windows-x64.zip",
+      "sha256": "5fa5a0cbf0a3a82693837290a93a6a8868a0f5cb2ebae56bcff7572d8883bab1",
+      "platform": "windows-x64",
+      "url": "https://github.com/joeedh/sculptblender-builds/releases/download/build-20260921-8aa9482/sculptblender-windows-x64.zip"
+    }
+  ]
+}
